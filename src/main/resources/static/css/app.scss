@@ -1,0 +1,38 @@
+@import "themes";
+			 
+body{
+	background-color: #d3d3d3;
+}
+
+form .validate-error{
+	color: red;
+}
+
+div.login-card{
+
+	display: flex;
+	margin-top: 50px;
+	div.col{
+		display: block;
+		margin: auto;
+		
+		div.card{
+			display: flex;
+			form {
+				display: block;
+				padding: 30px;
+				width: 100%;
+
+				button{
+					display: block;
+					margin: auto;
+				}
+				.input-field{
+					margin-top: 35px;
+				}
+				
+			} //end form
+		}
+	}
+	
+}//end login card

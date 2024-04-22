@@ -1,0 +1,24 @@
+$themes: (
+	blueTheme: (color1: #01579b),
+);
+
+@each $theme, $map in $themes{
+	
+	.btn{
+		background-color: map-get($map, color1);
+	}
+
+
+
+	.input-field input[type=text], .input-field input[type=password] {
+		&:focus {			
+
+			border-bottom: 1px solid map-get($map, color1) !important ;			
+		}
+	}
+
+	.input-field i.active{
+		color: map-get($map, color1) !important;
+	}
+	
+}
